@@ -2,7 +2,7 @@
 namespace classes;
 
 use interfaces\AreaPerimetar;
-require "interfaces\Area_Perimeter.php";
+
 
 class Circle implements AreaPerimetar{
     const PI = 3.14;
@@ -18,6 +18,6 @@ class Circle implements AreaPerimetar{
     }
     public function returnResult(){
         echo "Area of the circe is: " . $this->area() . "</br> 
-              Perimeter of the circle is: " . $this->perimeter();
+              Perimeter of the circle is: " . $this->perimeter() . "</br>";
     }
 }
