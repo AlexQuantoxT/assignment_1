@@ -5,7 +5,6 @@ use classes\Rhombus;
 use classes\Trapezoid;
 use classes\Triangle;
 
-require "interfaces\Area_Perimeter.php";
 require "autoload.php";
 
 $circle = new Circle(5);

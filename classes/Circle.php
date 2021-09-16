@@ -3,7 +3,6 @@ namespace classes;
 
 use interfaces\AreaPerimetar;
 
-
 class Circle implements AreaPerimetar{
     const PI = 3.14;
     public $r;
