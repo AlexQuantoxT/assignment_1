@@ -4,11 +4,12 @@ namespace classes;
 use interfaces\AreaPerimetar;
 
 class Trapezoid implements AreaPerimetar{
-    public $a;
-    public $b;
-    public $c;
-    public $d;
-    public $h;
+    public $name = 'trapezoid';
+    private $a;
+    private $b;
+    private $c;
+    private $d;
+    private $h;
     public function __construct($a,$b,$c,$d,$h){
         $this->a = $a;
         $this->b = $b;
@@ -21,9 +22,5 @@ class Trapezoid implements AreaPerimetar{
     }
     public function perimeter(){
         return ($this->a + $this->b + $this->c + $this->d);
-    }
-    public function returnResult(){
-        echo "Area of the trapezoid is: " . $this->area() . "</br> 
-              Perimeter of the trapezoid is: " . $this->perimeter() . "</br>";
     }
 }

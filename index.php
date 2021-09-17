@@ -4,20 +4,23 @@ use classes\Rectangle;
 use classes\Rhombus;
 use classes\Trapezoid;
 use classes\Triangle;
+use classes\Result;
 
 spl_autoload_register();
 
+$returnRes = new Result();
+
 $circle = new Circle(5);
-$circle->returnResult();
+echo $returnRes->returnResult($circle);
 
 $rectangle = new Rectangle(5,4);
-$rectangle->returnResult();
+echo $returnRes->returnResult($rectangle);
 
 $rhombus = new Rhombus(4,5,8);
-$rhombus->returnResult();
+echo $returnRes->returnResult($rhombus);
 
 $trapezoid = new Trapezoid(5,8,9,5,6);
-$trapezoid->returnResult();
+echo $returnRes->returnResult($trapezoid);
 
 $triangle = new Triangle(6,6,5,7);
-$triangle->returnResult();
+echo $returnRes->returnResult($triangle);

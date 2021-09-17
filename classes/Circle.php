@@ -5,7 +5,8 @@ use interfaces\AreaPerimetar;
 
 class Circle implements AreaPerimetar{
     const PI = 3.14;
-    public $r;
+    public $name = 'circle';
+    private $r;
     public function __construct($r){
         $this->r = $r;
     }
@@ -15,8 +16,7 @@ class Circle implements AreaPerimetar{
     public function perimeter(){
         return (2 * self::PI * $this->r);
     }
-    public function returnResult(){
-        echo "Area of the circe is: " . $this->area() . "</br> 
-              Perimeter of the circle is: " . $this->perimeter() . "</br>";
+    static public function geGeotName(){
+        return self::$name;
     }
 }
